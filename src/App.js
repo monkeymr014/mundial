@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import  {getMatchInfo}  from './api.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  state = {
+    data: []
+  }
+
+
+
+  componentWillMount() {
+    getMatchInfo().then((response) => {
+        this.setState({
+          data: response.data,
+        });
+    }).catch(err=>console.log(err.message));
+}
+
+  render() {
+
+    console.log(this.state);
+    return (
+
+      <div className="App">
+        <p>aa</p>
+      
+      </div>
+    )
+  }
 }
 
 export default App;

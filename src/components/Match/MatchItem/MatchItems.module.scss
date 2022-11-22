@@ -1,6 +1,7 @@
 .wrapper {
-   width: 100%;
-   padding:  0  0 20px;
+   min-width: 30%;
+   left: 0;
+   padding:  0 0 20px;
    margin: 0;
    position: relative;
    font-size: 40px;
@@ -17,7 +18,7 @@
    width: 100%;
    color: white;
    padding: 50px;
-   max-width: 20%;
+   max-width: 80%;
    min-width: 20%;
    border: solid 6px;
    border-radius: 90px 90px 90px 90px;

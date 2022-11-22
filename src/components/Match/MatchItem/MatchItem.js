@@ -5,7 +5,7 @@ const MatchItems = ({ away_team_en, home_team_en, home_score, away_score, time_e
 
 
    return (
-      <li className={styles.wrapper}>
+      <div className={styles.wrapper}>
          
          <div 
           className={time_elapsed == "finished" ? styles.wrapper_match_finish : time_elapsed === "notstarted" ? styles.wrapper_match_notstarted : styles.wrapper_match_h } >
@@ -20,7 +20,7 @@ const MatchItems = ({ away_team_en, home_team_en, home_score, away_score, time_e
             </div>
             <span></span>
          </div>
-      </li>
+      </div>
    )
 }
 

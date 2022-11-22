@@ -7,7 +7,7 @@ import Match from './components/Match/Match';
 class App extends React.Component {
 
   state = {
-    data: [ {}]
+    data: [ {}, {}]
   }
    componentWillMount() {
     getMatchInfo().then((response) => {

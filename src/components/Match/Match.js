@@ -4,13 +4,13 @@ import styles from "./Match.module.scss"
 
 const Match = (props) => (
    
-   <ul className={styles.wrapper}>
+   <div className={styles.wrapper}>
       {
          props.data.map(item => (
             <MatchItem  {...item} />
          ))
       }
-   </ul>
+   </div>
 )
 
 export default Match

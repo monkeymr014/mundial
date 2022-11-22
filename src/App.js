@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from'./App.module.scss';
 import './index.css'
 import  {getMatchInfo}  from './api.js';
 import Match from './components/Match/Match';
@@ -20,8 +20,8 @@ class App extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div className="App">  
-        <h1>Mundial</h1>
+      <div className={styles.App}>  
+        <h1 className={styles.h1} >Mundial<br/>faza grupowa</h1>
         <Match data={this.state.data} /> 
       </div>
     )

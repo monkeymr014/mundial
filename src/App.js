@@ -7,9 +7,6 @@ class App extends React.Component {
   state = {
     data: []
   }
-
-
-
   componentWillMount() {
     getMatchInfo().then((response) => {
         this.setState({
@@ -19,13 +16,10 @@ class App extends React.Component {
 }
 
   render() {
-
     console.log(this.state);
     return (
-
-      <div className="App">
-        <p>aa</p>
-      
+      <div className="App">  
+        <h1>Mundial</h1>
       </div>
     )
   }

@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "./MatchItems.module.scss"
 
-const MatchItems = ({ away_team_en, home_team_en, home_score, away_score, time_elapsed, away_flag, home_flag }) => {
-
+const MatchItems = ({ away_team_en, home_team_en, home_score, away_score, time_elapsed, away_flag, home_flag, group }) => {
 
    return (
       <div className={styles.wrapper}>
-         
-         <div 
-          className={time_elapsed == "finished" ? styles.wrapper_match_finish : time_elapsed === "notstarted" ? styles.wrapper_match_notstarted : styles.wrapper_match_h } >
+         <p className={styles.group} >Grupa {group}</p>
+         <div
+            className={time_elapsed == "finished" ? styles.wrapper_match_finish : time_elapsed === "notstarted" ? styles.wrapper_match_notstarted : styles.wrapper_match_h} >
             <div className={styles.wrapper_flag}>
                <img src={away_flag} /> <img src={home_flag} />
             </div>
@@ -18,9 +17,9 @@ const MatchItems = ({ away_team_en, home_team_en, home_score, away_score, time_e
             <div className={styles.result}>
                {away_score} : {home_score}
             </div>
-            <span></span>
          </div>
       </div>
+
    )
 }
 

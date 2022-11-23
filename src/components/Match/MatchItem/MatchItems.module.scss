@@ -1,10 +1,22 @@
+@keyframes fade-in {
+   0% {
+     opacity: 0;
+     transform: scale(0);
+   }
+   
+   100% {
+     opacity: 1;
+     transform: scale(1);
+   }
+ }
 .wrapper {
-   min-width: 30%;
+   animation: .3s ease-in-out both fade-in;
+   min-width: 20%;
    left: 0;
-   padding:  0 0 20px;
+   padding:  0 20px 20px;
    margin: 0;
    position: relative;
-   font-size: 40px;
+   font-size: 10px;
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
@@ -17,8 +29,8 @@
 .wrapper_match {
    width: 100%;
    color: white;
-   padding: 50px;
-   max-width: 80%;
+   padding: 30px;
+   max-width: 70%;
    min-width: 20%;
    border: solid 6px;
    border-radius: 90px 90px 90px 90px;
@@ -64,7 +76,7 @@ img {
 
 .countres {
    display: flex;
-   font-size: 40px;
+   font-size: 20px;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
@@ -74,4 +86,7 @@ img {
 
 .result {
    @extend .countres
+}
+.group {
+   font-size:20px;
 }

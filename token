@@ -1,2 +1,14 @@
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdjYzUyNTQ4NzA5MjMzZmQ5Yjg0ZTEiLCJpYXQiOjE2NjkxMjEzMTgsImV4cCI6MTY2OTIwNzcxOH0.jPV7rZjhi2U4GlZl1RySKdQsOQhgsAvESjAFjyghabc
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdlMjIxZTU3MDgxNjZkMDdjNTZmYmMiLCJpYXQiOjE2NjkyMTA2NTUsImV4cCI6MTY2OTI5NzA1NX0.j1mu2kpVs3kGaKF5m8AWqMcBiboQr18ok3Dz39TFVss
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzgzYTgzNmY5YzMyYjNmNjNkZGRiYWYiLCJpYXQiOjE2Njk1NzI2NjQsImV4cCI6MTY2OTY1OTA2NH0.nESDINsHsToziO6NynjtvgDje-VFnNjm99Fxr8gOQn4
+
+
+curl --location --request POST 'http://api.cup2022.ir/api/v1/user' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"name" : "Reza RAhiminia",
+"email": "aa.aaa@gmail.com",
+"password": "12345678",
+"passwordConfirm" : "12345678"
+}'

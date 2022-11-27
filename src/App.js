@@ -1,15 +1,16 @@
 import React from 'react';
-import styles from'./App.module.scss';
-import './index.css'
-import  {getMatchInfo}  from './api.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Match from './components/Match/Match';
+import Header from './components/Match/Header/Header';
+import  {getMatchInfo}  from './api.js';
+import './index.css'
 
 class App extends React.Component {
 
   state = {
     data: []
   }
-   componentWillMount() {
+  getMatchData = () => {
     getMatchInfo().then((response) => {
         this.setState({
           data: response.data.data,
@@ -20,10 +21,16 @@ class App extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div className={styles.App}>  
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Match data={this.state.data} (this.getMatchData()) ></Match>} />
+        </Routes>
+      </BrowserRouter>
+    /*   <div >  
         <h1 className={styles.h1} >Mundial<br/>faza grupowa</h1>
         <Match data={this.state.data} /> 
-      </div>
+      </div> */
     )
   }
 }

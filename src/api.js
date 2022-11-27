@@ -5,7 +5,7 @@ var config = {
     mode: 'no-cors',
     url: '/api/v1/match',
     headers: { 
-      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdjYzUyNTQ4NzA5MjMzZmQ5Yjg0ZTEiLCJpYXQiOjE2NjkxMjEzMTgsImV4cCI6MTY2OTIwNzcxOH0.jPV7rZjhi2U4GlZl1RySKdQsOQhgsAvESjAFjyghabc',
+      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzgzYTgzNmY5YzMyYjNmNjNkZGRiYWYiLCJpYXQiOjE2Njk1NzI2NjQsImV4cCI6MTY2OTY1OTA2NH0.nESDINsHsToziO6NynjtvgDje-VFnNjm99Fxr8gOQn4',
       'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
     },

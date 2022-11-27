@@ -19,7 +19,6 @@ const MatchItems = ({ away_team_en, home_team_en, home_score, away_score, time_e
             </div>
          </div>
       </div>
-
    )
 }
 

@@ -1,14 +1,15 @@
-.wrapper {
+.wrapperItem {
    margin: 0;
    left: 0;
    padding: 0;
    width: 100%;
    display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-align-content: flex-start;
-
-
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: flex-start;
+}
+.wrapper {
+   text-align: center;
 }

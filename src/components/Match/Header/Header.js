@@ -4,7 +4,6 @@ import styles from "./Header.module.scss"
 
 const Header = () => (
    <nav className={styles.wrapper} >
-      
       <NavLink className={styles.navLink} to="/" >Mecze</NavLink>
       <NavLink className={styles.navLink} to="/tables" >Tabele</NavLink>
    </nav>

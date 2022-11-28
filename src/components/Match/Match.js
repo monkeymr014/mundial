@@ -1,12 +1,12 @@
 import React from "react";
-import MatchItem from "./MatchItem/MatchItem";
+import MatchItem from "./MatchItem";
 import styles from "./Match.module.scss"
 
 
 
 class Match extends React.Component {
-   componentDidMount = () => (
-      this.props.getMachDataFn()
+   componentWillMount = () => (
+      this.props.getMachDataFn('match')
    )
    render() {
       return (
@@ -16,7 +16,7 @@ class Match extends React.Component {
                <div className={styles.wrapperItem}>
                   {
                      this.props.data.map(item => (
-                        <MatchItem  {...item} />
+                        <MatchItem key={item._id} {...item} />
                      ))
                   }
                </div>

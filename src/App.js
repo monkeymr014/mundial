@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Match from './components/Match/Match';
-import Header from './components/Match/Header/Header';
+import Header from './components/Header/Header';
+import Standings from './components/Standings/Standings'
 import { getMatchInfo } from './api.js';
 import './index.css'
 
@@ -9,23 +10,23 @@ class App extends React.Component {
 
   state = {
     data: [],
-    url: 'match'
+    url: ''
   }
-  getMatchData = () => {
-    getMatchInfo(this.state.url).then((response) => {
+  getMatchData = (e) => {
+    getMatchInfo(e).then((response) => {
+      console.log(e)
       this.setState({
-        data: response.data.data,
+        data: response.data.data
       });
     }).catch(err => console.log(err.message));
   }
-
   render() {
-    console.log(this.state);
     return (
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Match data={this.state.data} getMachDataFn={this.getMatchData} ></Match>} />
+          <Route path="/standings" element={<Standings data={this.state.data} getMachDataFn={this.getMatchData} ></Standings>} />
         </Routes>
       </BrowserRouter>
     )

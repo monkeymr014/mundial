@@ -6,7 +6,10 @@ const Header = () => (
    <nav className={styles.wrapper} >
       <NavLink className={styles.navLink} to="/" >Mecze</NavLink>
       <NavLink className={styles.navLink} to="/standings" >Tabele</NavLink>
+
+
       
+
    </nav>
 )
 

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 var config = {
   headers: {
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzgzYTgzNmY5YzMyYjNmNjNkZGRiYWYiLCJpYXQiOjE2Njk1NzI2NjQsImV4cCI6MTY2OTY1OTA2NH0.nESDINsHsToziO6NynjtvgDje-VFnNjm99Fxr8gOQn4',
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzg2NGJmM2ZhNzhmOWNkZjQ5NDFmZDgiLCJpYXQiOjE2Njk3NDU2NTIsImV4cCI6MTY2OTgzMjA1Mn0.YLLSvHSOZQsDInSyzrEy0yliJKYt8TwOLvFhIL8kHZI',
     'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json',
   },

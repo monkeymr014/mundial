@@ -1,11 +1,11 @@
 import React from "react";
+import styles from "./TeamItem.module.scss"
 
-const Team = ({name_en, pts,mp, gf, ga}) => (
+const Team = ({ name_en, w, l, d, pts, mp, gf, gd, ga }) => (
    <>
-   <p>{name_en}</p>
-   <p><b>{pts}</b>
-   </p>
-   <p>mecze: {mp} bramki:{gf} - {ga} </p>
+      <div className={styles.wrapper}>
+         <div className={styles.pts} ><div>{name_en} </div> <div>{mp} </div> <div>{w} </div> <div>{d} </div> <div>{l} </div> <div>{gf}:{ga} </div> <div>{gd}</div> <div>{pts}</div></div>
+      </div>
    </>
 )
 

@@ -1,0 +1,14 @@
+.wrapper {
+   width: 100%;
+ 
+}
+.pts {
+   width: 100%;
+   padding: 20px;
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 130px 60px 60px 60px 60px 60px 60px 60px;
+   justify-content: left; 
+   justify-items: center; 
+   align-items: center; 
+}

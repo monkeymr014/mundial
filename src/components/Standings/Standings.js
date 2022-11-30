@@ -7,6 +7,7 @@ class Standings extends React.Component {
  
    componentWillMount = () => (
       this.props.getMachDataFn('standings')
+
    )
    
    render() {

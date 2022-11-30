@@ -14,8 +14,9 @@ class App extends React.Component {
   }
   getMatchData = (e) => {
     getMatchInfo(e).then((response) => {
-      console.log(e)
+      
       this.setState({
+      
         data: response.data.data
       });
     }).catch(err => console.log(err.message));
